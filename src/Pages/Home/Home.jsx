@@ -1,6 +1,6 @@
 import "./Home.scss";
-import Main from "../Main/Main.jsx";
-import NavBar from "../NavBar/NavBar.jsx";
+import Main from "../../containers/Main/Main.jsx";
+import NavBar from "../../containers/NavBar/NavBar.jsx";
 import { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBoar/SearchBar";
 import Header from "./components/Header/Header";
