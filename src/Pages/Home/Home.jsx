@@ -36,15 +36,14 @@ const Home = () => {
 
   return (
     <div className="home">
-         <NavBar className="app__navbar"></NavBar>
       <Header />
       <SearchBar
-        className="app__search-box"
+        className="home__search-box"
         label={"courses"}
         searchTerm={searchTerm}
         handleInput={handleInput}
       />
-      <Main className="app__main" courses={searchCourses} />
+      <Main className="home__main" courses={searchCourses} />
     </div>
   )
 }

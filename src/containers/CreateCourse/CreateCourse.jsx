@@ -19,7 +19,7 @@ const CreateCourse = () => {
   return (
     <section className="create-course">
       <h2 className="create-course__title">Add Courses</h2>
-      <Form handleSubmit={handleSubmit} defaultFormState={defaultFormState} formTitle="Add A New Course" />
+      <AddCourseForm handleSubmit={handleSubmit} defaultFormState={defaultFormState} formTitle="Add A New Course" />
     </section>
   );
 };

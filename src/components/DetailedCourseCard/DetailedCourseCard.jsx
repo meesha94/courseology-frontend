@@ -1,10 +1,6 @@
 import "./DetailedCourseCard.scss";
 
-const DetailedCourseCard = (props) => {
-    const {image, name, level, teacher, information, category } = props;
-
-
-  
+const DetailedCourseCard = ({image, name, level, teacher, information, category}) => {
     return (
     <div className='card' name="card">
       <div className='card__image-container'>
@@ -15,8 +11,6 @@ const DetailedCourseCard = (props) => {
         <h3 className='card__level'>{level} </h3>
         <h3 className='card__teacher'>{teacher}</h3>
         <p className='card__information'>{information}</p>
-        
-
     </div>
   )
 }
