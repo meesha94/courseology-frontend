@@ -25,7 +25,7 @@ const AddCourseForm = ({ defaultFormState, handleSubmit, formTitle }) => {
           type="file"
           label="Image"
           placeholder="Upload Image"
-          value={course.name}
+          value={course.image}
           onInput={event => setCourse({ ...course, image: event.target.value })}
           accept="image/*,.txt"
         />
@@ -60,6 +60,14 @@ const AddCourseForm = ({ defaultFormState, handleSubmit, formTitle }) => {
           placeholder="Teacher"
           value={course.teacher}
           onInput={event => setCourse({ ...course, teacher: event.target.value })}
+        />
+        <input
+          className="form-container__input"
+          type="text"
+          label="Course Information"
+          placeholder="Course information"
+          value={course.information}
+          onInput={event => setCourse({ ...course, information: event.target.value })}
         />
         <button type="submit" className="form-container__button">
           Submit
