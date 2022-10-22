@@ -1,7 +1,7 @@
 import "./CourseCard.scss";
 
 const CourseCard = (props) => {
-    const {image, name,completionTime, price} = props;
+    const {image, name, level, teacher} = props;
 
 
   
@@ -11,8 +11,8 @@ const CourseCard = (props) => {
         <img src={image} alt="placeholder" className='card__image'/>
         </div>
         <h1 className='card__name'>{name}</h1>
-        <h3 className='card__time'>{completionTime} </h3>
-        <h3 className='card__price'>{price}</h3>
+        <h3 className='card__time'>{level} </h3>
+        <h3 className='card__price'>{teacher}</h3>
         
 
     </div>

@@ -1,7 +1,7 @@
 import "./DetailedCourseCard.scss";
 
 const DetailedCourseCard = (props) => {
-    const {image, name, completionTime, price, information, location } = props;
+    const {image, name, level, teacher, information, category } = props;
 
 
   
@@ -11,9 +11,9 @@ const DetailedCourseCard = (props) => {
         <img src={image} alt="placeholder" className='card__image'/>
         </div>
         <h1 className='card__name'>{name}</h1>
-        <h2 className='card__category'>{location}</h2>
-        <h3 className='card__time'>{completionTime} </h3>
-        <h3 className='card__price'>{price}</h3>
+        <h2 className='card__category'>{category}</h2>
+        <h3 className='card__time'>{level} </h3>
+        <h3 className='card__price'>{teacher}</h3>
         <p className='card-information'>{information}</p>
         
 
