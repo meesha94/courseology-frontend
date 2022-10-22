@@ -11,8 +11,8 @@ const CourseCard = (props) => {
         <img src={image} alt="placeholder" className='card__image'/>
         </div>
         <h1 className='card__name'>{name}</h1>
-        <h3 className='card__time'>{level} </h3>
-        <h3 className='card__price'>{teacher}</h3>
+        <h3 className='card__level'>{level} </h3>
+        <h3 className='card__teacher'>{teacher}</h3>
         
 
     </div>

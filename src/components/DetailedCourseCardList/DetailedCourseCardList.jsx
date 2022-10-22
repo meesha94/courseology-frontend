@@ -1,5 +1,3 @@
-import CourseCard from "../CourseCard/CourseCard";
-
 import DetailedCourseCard from "../DetailedCourseCard/DetailedCourseCard";
 import "./DetailedCourseCardList.scss";
 

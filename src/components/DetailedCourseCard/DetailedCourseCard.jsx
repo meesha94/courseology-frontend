@@ -12,9 +12,9 @@ const DetailedCourseCard = (props) => {
         </div>
         <h1 className='card__name'>{name}</h1>
         <h2 className='card__category'>{category}</h2>
-        <h3 className='card__time'>{level} </h3>
-        <h3 className='card__price'>{teacher}</h3>
-        <p className='card-information'>{information}</p>
+        <h3 className='card__level'>{level} </h3>
+        <h3 className='card__teacher'>{teacher}</h3>
+        <p className='card__information'>{information}</p>
         
 
     </div>
