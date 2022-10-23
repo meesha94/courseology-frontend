@@ -14,7 +14,7 @@ const EditCourse = () => {
     const url = `http://localhost:8080/course/${id}`;
     const response = await fetch(url);
     const courseData = await response.json();
-    setGreeting(courseData);
+    setCourse(courseData);
   };
 
   useEffect(() => {

@@ -1,23 +1,22 @@
 import DetailedCourseCard from "../DetailedCourseCard/DetailedCourseCard";
 import "./DetailedCourseCardList.scss";
+import { Link } from "react-router-dom";
 
 
 const DetailedCourseCardList = ({ courses }) => {
+  const { id } = useParams();
+  const course = courses.find(course => course.id == id)
   return (
     <div className="course-list">
-    {courses.map(course => (
-      <Link key={course.id} to={`/course/edit/${course.id}`}>
       <DetailedCourseCard
               key={course.id}
               image={course.image_url}
               name={course.name}
               category={course.category}
-              completionTime={course.completionTime}
-              price={course.price}
+              level={course.level}
+              teacher={course.teacher}
               information={course.information}
             />
-      </Link>
-    ))}
   </div>
   );
 };

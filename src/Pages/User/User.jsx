@@ -1,5 +1,5 @@
 import React from 'react'
-import UserProfile from '../../components/UserProfile/UserPorfile'
+import UserProfile from '../../components/UserProfile/UserProfile'
 import CreateCourse from'../../containers/CreateCourse/CreateCourse.jsx'
 const User = ({users}) => {
   return (
@@ -7,7 +7,7 @@ const User = ({users}) => {
         <UserProfile
         image={users.profileImg}
         name={users.name}
-        role ={users.role}
+        role={users.role}
         />
         <CreateCourse />
     </div>

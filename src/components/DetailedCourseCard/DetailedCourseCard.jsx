@@ -4,7 +4,7 @@ const DetailedCourseCard = ({image, name, level, teacher, information, category}
     return (
     <div className='card' name="card">
       <div className='card__image-container'>
-        <img src={image} alt="placeholder" className='card__image'/>
+        <img src={image} alt="course topic" className='card__image'/>
         </div>
         <h1 className='card__name'>{name}</h1>
         <h2 className='card__category'>{category}</h2>

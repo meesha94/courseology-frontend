@@ -12,8 +12,9 @@ const CourseCardList = ({ courses }) => {
               key={course.id}
               image={course.image_url}
               name={course.name}
-              level={course.level}
+              category={course.category}
               teacher={course.teacher}
+              id={course.id}
             />
           )
         );
