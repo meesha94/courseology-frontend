@@ -40,7 +40,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/course/:id" element={<Course />} />
-        <Route path="/course/create" element={<User />} />
+        <Route path="/user" element={<User />} />
         <Route path="/" element={<Home searchTerm={searchTerm} handleInput={handleInput} searchCourses={searchCourses}/>} />
       </Routes>
     </Router>

@@ -10,7 +10,7 @@ const DetailedCourseCardList = ({ courses }) => {
     <div className="course-list">
       <DetailedCourseCard
               key={course.id}
-              image={course.image_url}
+              image={course.image}
               name={course.name}
               category={course.category}
               level={course.level}

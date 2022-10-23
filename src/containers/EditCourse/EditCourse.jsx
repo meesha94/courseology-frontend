@@ -27,7 +27,7 @@ const EditCourse = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(updatedCourses),
+      body: JSON.stringify(updatedCourse),
     });
 
     if (result.ok) {

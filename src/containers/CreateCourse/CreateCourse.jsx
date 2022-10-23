@@ -4,7 +4,7 @@ import AddCourseForm from "../../components/AddCourseForm/AddCourseForm.jsx";
 const CreateCourse = () => {
   
   const handleSubmit = async course => {
-    await fetch("http://localhost:8080/course/create", {
+    await fetch("http://localhost:8080/course", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
