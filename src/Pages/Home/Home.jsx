@@ -7,7 +7,6 @@ const Home = ({searchTerm, handleInput, searchCourses}) => {
 
   return (
     <div className="home">
-      <Header />
       <SearchBar
         className="home__search-box"
         label={"courses"}

@@ -5,6 +5,7 @@ import NavBar from "./containers/NavBar/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Course from "./Pages/Course/Course";
 import User from "./Pages/User/User";
+import Header from "./components/Header/Header";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
 
   return (
     <Router>
+      <Header/>
       <NavBar />
       <Routes>
         <Route path="/course/:id" element={<Course />} />
