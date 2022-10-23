@@ -1,6 +1,6 @@
 import "./DetailedCourseCard.scss";
 
-const DetailedCourseCard = ({image, name, level, teacher, information, category}) => {
+const DetailedCourseCard = ({image, name, category, level, teacher, information}) => {
     return (
     <div className='card' name="card">
       <div className='card__image-container'>
