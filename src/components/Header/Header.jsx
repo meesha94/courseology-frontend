@@ -1,4 +1,4 @@
-import hogwarts from "../../assets/images/hogwarts.jpeg";
+import hogwarts from "../../assets/images/hogwarts.jpg";
 import "./Header.scss";
 
 const Header = () => {

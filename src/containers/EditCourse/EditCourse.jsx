@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import AddCourseForm from "../../components/AddCourseForm/AddCourseForm";
-import CourseCard from "../../components/CourseCard/CourseCard";
+import DetailedCourseCard from "../../components/DetailedCourseCard/DetailedCourseCard";
 import "./EditCourse.scss";
 
 const EditCourse = () => {
@@ -49,7 +49,7 @@ const EditCourse = () => {
     });
 
     if (result.ok) {
-      alert("Course deleted");
+      alert("This Course has been deleted");
       navigate("/");
     } else {
       const message = await result.text();
@@ -62,18 +62,17 @@ const EditCourse = () => {
   if (!course) return <h2>Course not found</h2> ;
 
   return (
-    <section class="edit-course">
-      <h2 class="edit-course__title">Edit Course</h2>
-      <div class="edit-course__content">
-        <CourseCard course={course} />
-        <div class="edit-course__buttons">
+    <section className="edit-course">
+      <h2 className="edit-course__title">Edit Course</h2>
+      <div className="edit-course__content">
+        <div className="edit-course__buttons">
           <button
-            class={showForm ? "edit-course__button" : "edit-course__button edit-course__button--secondary"}
+            className={showForm ? "edit-course__button" : "edit-course__button edit-course__button--secondary"}
             onClick={handleShowForm}
           >
             Update
           </button>
-          <button class="edit-course__button edit-course__button--secondary" onClick={handleDelete}>
+          <button className="edit-course__button edit-course__button--secondary" onClick={handleDelete}>
             Delete
           </button>
         </div>

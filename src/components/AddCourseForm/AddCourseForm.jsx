@@ -22,12 +22,12 @@ const AddCourseForm = ({ defaultFormState, handleSubmit, formTitle }) => {
       <form className="form-container__form" onSubmit={handleValidation}>
       <input
           className="form-container__input"
-          type="file"
+          type="text"
           label="Image"
           placeholder="Upload Image"
           value={course.image}
           onInput={event => setCourse({ ...course, image: event.target.value })}
-          accept="image/*,.txt"
+          
         />
         <input
           className="form-container__input"

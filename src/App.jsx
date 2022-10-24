@@ -39,7 +39,7 @@ const App = () => {
       <Header/>
       <NavBar />
       <Routes>
-        <Route path="/course/:id" element={<Course />} />
+        <Route path="/course/:id" element={<Course courses={courses}/>} />
         <Route path="/user" element={<User />} />
         <Route path="/" element={<Home searchTerm={searchTerm} handleInput={handleInput} searchCourses={searchCourses}/>} />
       </Routes>

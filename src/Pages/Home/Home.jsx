@@ -1,6 +1,5 @@
 import Main from "../../containers/Main/Main.jsx";
 import SearchBar from "../../components/SearchBar/SearchBar.jsx";
-import Header from "../../components/Header/Header";
 import "./Home.scss";
 
 const Home = ({searchTerm, handleInput, searchCourses}) => {

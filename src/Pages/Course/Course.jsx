@@ -1,9 +1,9 @@
-import DetailedCourseCard from '../../components/DetailedCourseCard/DetailedCourseCard';
+import DetailedCourseCardList from '../../components/DetailedCourseCardList/DetailedCourseCardList';
 import EditCourse from '../../containers/EditCourse/EditCourse.jsx';
 const Course = ({courses}) => {
   return (
     <div>
-        <DetailedCourseCard courses={courses} />
+        <DetailedCourseCardList courses={courses} />
         <EditCourse />
     </div>
   )

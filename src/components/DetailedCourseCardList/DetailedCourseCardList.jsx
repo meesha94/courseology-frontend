@@ -1,6 +1,6 @@
 import DetailedCourseCard from "../DetailedCourseCard/DetailedCourseCard";
 import "./DetailedCourseCardList.scss";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 
 const DetailedCourseCardList = ({ courses }) => {
@@ -11,7 +11,7 @@ const DetailedCourseCardList = ({ courses }) => {
       <DetailedCourseCard
               key={course.id}
               image={course.image}
-              name={course.name}
+              name={course.name} 
               category={course.category}
               level={course.level}
               teacher={course.teacher}

@@ -2,12 +2,13 @@ import CourseCard from "../CourseCard/CourseCard";
 
 import "./CourseCardList.scss";
 
-const CourseCardList = ({ courses }) => {
+const CourseCardList = ({ courses}) => {
   return (
     <div className="courses-list">
       {courses?.map((course) => {
         return (
           course && (
+           
             <CourseCard
               key={course.id}
               image={course.image}
@@ -16,6 +17,7 @@ const CourseCardList = ({ courses }) => {
               teacher={course.teacher}
               id={course.id}
             />
+            
           )
         );
       })}
