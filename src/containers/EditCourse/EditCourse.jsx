@@ -33,6 +33,7 @@ const EditCourse = () => {
     if (result.ok) {
       alert("Course updated");
       setCourse(updatedCourse);
+      navigate("/");
     } else {
       const message = await result.text();
       alert(message);

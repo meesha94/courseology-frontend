@@ -1,0 +1,41 @@
+.detailed-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+    border: 2px solid #740001;
+    height: 900px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+   
+  
+    &__image {
+      width: 280px;
+      height: 200px;
+     
+    }
+  
+    &__name {
+      text-align: center;
+      font-size: 30px;
+      color: #740001;
+      text-decoration-line: underline;
+
+      &-link{
+      text-decoration: none;
+      }
+    }
+  
+   &__teacher, &__category {
+      text-align: center;
+      color: black;
+    }
+    
+    &__information{
+    max-width:500px;
+  }
+    
+  }

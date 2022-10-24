@@ -5,8 +5,12 @@
     height: 2rem;
     border: 2px solid maroon;
   }
+  .search-bar__input:focus{
+    outline:none;
+    border: 2px solid maroon;
+  }
 
   .search-bar {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
