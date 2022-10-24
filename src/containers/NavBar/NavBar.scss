@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   border-bottom: 2px solid maroon;
+   margin-bottom: 1rem;
+
+    &__item-home, &__item-user{
+        text-decoration: none;
+        color: black;
+        
+    }
+
+   
+  }
+  
