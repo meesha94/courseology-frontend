@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
 .edit-course {
+    background-color: black;
+    color: white;
     &__title {
      display: flex;
      justify-content: center;
      font-size: 2.5rem;
      font-family: "Henny Penny", cursive;  
      color: #D3A625;
+     
     }
   
     &__content {

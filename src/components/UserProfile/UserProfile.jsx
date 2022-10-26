@@ -3,6 +3,9 @@ import "./UserProfile.scss";
 const UserProfile = ({ profileImg, name, role }) => {
   return (
     <div className="user-profile">
+      <div className="stars"></div>
+        <div className="twinkling"></div> 
+       <div className="clouds"></div>
       <img
         className="user-profile__image"
         src={profileImg}

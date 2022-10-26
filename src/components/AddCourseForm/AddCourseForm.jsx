@@ -61,8 +61,8 @@ const AddCourseForm = ({ defaultFormState, handleSubmit, formTitle }) => {
           value={course.teacher}
           onInput={event => setCourse({ ...course, teacher: event.target.value })}
         />
-        <input
-          className="form-container__input"
+        <textarea
+          className="form-container__input--info"
           type="text"
           label="Course Information"
           placeholder="Course information"

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
 .form-container{
    
     &__title{
@@ -9,12 +11,41 @@
         text-decoration-color: #740001;
     }
 
-     &__input{
+     &__form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 40rem;
+        max-width: 500rem;
         gap: 1.75rem;
+     }
+
+     &__input{
+        width: 25rem;
+        height: 1.5rem;
+        padding: 0.5rem;
+        font-family: cursive;
+     }
+
+     &__input--info{
+        width:25rem;
+        height: 11rem;
+        scroll-behavior: auto;
+        resize: none;
+        padding: 0.5rem;
+        font-family: cursive;
+        
+    
+   
+   
+     }
+
+     &__button{
+        background: #740002;
+      border: 2px solid #740001;
+      padding: 0.5em 2em;
+      color:#D3A625;
+      font-family: "Henny Penny", cursive;
+      font-size: 1.5rem;
      }
 }
