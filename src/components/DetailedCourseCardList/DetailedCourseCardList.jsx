@@ -7,7 +7,8 @@ const DetailedCourseCardList = ({ courses }) => {
   const { id } = useParams();
   const course = courses.find(course => course.id == id)
   return (
-    <div className="course-list">
+    <div className="detailed-course-list">
+      
       <DetailedCourseCard
               key={course.id}
               image={course.image}
@@ -17,6 +18,9 @@ const DetailedCourseCardList = ({ courses }) => {
               teacher={course.teacher}
               information={course.information}
             />
+             <div className="stars"></div>
+        <div className="twinkling"></div> 
+       <div className="clouds"></div>
   </div>
   );
 };

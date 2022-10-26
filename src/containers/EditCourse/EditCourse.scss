@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+.edit-course {
+    &__title {
+     display: flex;
+     justify-content: center;
+     font-size: 2.5rem;
+     font-family: "Henny Penny", cursive;  
+     color: #D3A625;
+    }
+  
+    &__content {
+      margin: auto;
+      width: fit-content;
+      max-width: 500px;
+      
+    }
+  
+    &__buttons {
+      display: flex;
+      justify-content: center;
+     
+    }
+  
+    &__button {
+      margin: 2em 0;
+      display: inline-block;
+      background: #740002;
+      border: 2px solid #740001;
+      padding: 0.5em 2em;
+      color:#D3A625;
+      font-family: "Henny Penny", cursive;
+      font-size: 1.5rem;
+  
+      &--secondary {
+        border: 12px solid #740001;
+        background-color: unset;
+        color: #D3A625;;
+      }
+    }
+  }
+  

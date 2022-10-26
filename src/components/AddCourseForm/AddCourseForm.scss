@@ -1,0 +1,20 @@
+.form-container{
+   
+    &__title{
+        font-family: "Henny Penny", cursive;
+        color: #D3A625;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-color: #740001;
+    }
+
+     &__input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 40rem;
+        gap: 1.75rem;
+     }
+}
